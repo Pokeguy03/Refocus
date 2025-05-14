@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REFOCUS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>REFOCUS</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#problem">Problem</a></li>
+        <li><a href="#solution">Solution</a></li>
+        <li><a href="#prototype">Prototype</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h2>Blurring the Line Between Illusion and Reality</h2>
+    <p>A smart wearable assistant for individuals with schizophrenia.</p>
+    <a href="#prototype" class="cta-button">See How It Works</a>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p style="text-align: center;">We are a passionate team working on an innovative device to support mental health through technology.</p>
+  </section>
+
+  <section id="problem">
+    <h2>The Problem</h2>
+    <p style="text-align: center;">Schizophrenia affects millions, blurring the line between reality and hallucination. There’s a need for real-time support.</p>
+  </section>
+
+  <section id="solution">
+    <h2>The Solution</h2>
+    <ul>
+      <li>Reality Check Button</li>
+      <li>Camera and Microphone Integration</li>
+      <li>Audio-Visual Real-Time Analysis</li>
+      <li>Touchscreen Interface</li>
+    </ul>
+  </section>
+
+  <section id="prototype">
+    <h2>Prototype</h2>
+    <p style="text-align: center;">View the first working version of our device that includes key functionalities for early validation.</p>
+    <img src="/Prototype image.png" alt="Prototype Image" />
+  </section>
+
+  <section id="how-it-helps">
+    <h2>How It Helps</h2>
+    <p style="text-align: center;">Empowering patients, assisting caregivers, and informing doctors with real-time data and clarity.</p>
+  </section>
+
+  <section id="roadmap">
+    <h2>Development Roadmap</h2>
+    <div class="roadmap-flow">
+        <div class="roadmap-item">
+            <div class="roadmap-content">
+                <h3>Phase 1</h3>
+                <p>Build MVP</p>
+            </div>
+        </div>
+        <div class="roadmap-arrow"></div>
+        <div class="roadmap-item">
+            <div class="roadmap-content">
+                <h3>Phase 2</h3>
+                <p>User Testing</p>
+            </div>
+        </div>
+        <div class="roadmap-arrow"></div>
+        <div class="roadmap-item">
+            <div class="roadmap-content">
+                <h3>Phase 3</h3>
+                <p>Clinical Validation</p>
+            </div>
+        </div>
+        <div class="roadmap-arrow"></div>
+        <div class="roadmap-item">
+            <div class="roadmap-content">
+                <h3>Phase 4</h3>
+                <p>Market Launch</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <section id="reports" class="reports-section">
+    <h2>Clinical Dashboard</h2>
+    <div class="reports-container">
+        <div class="auth-box">
+            <h3>Healthcare Provider Access</h3>
+            <form class="login-form">
+                <div class="form-group">
+                    <label for="provider-id">Provider ID</label>
+                    <input type="text" id="provider-id" placeholder="Enter Provider ID" required />
+                </div>
+                <div class="form-group">
+                    <label for="provider-password">Password</label>
+                    <input type="password" id="provider-password" placeholder="Enter Password" required />
+                </div>
+                <div class="form-group">
+                    <label for="facility">Healthcare Facility</label>
+                    <select id="facility" required>
+                        <option value="">Select Facility</option>
+                        <option value="facility1">Central Hospital</option>
+                        <option value="facility2">Mental Health Center</option>
+                        <option value="facility3">Community Clinic</option>
+                    </select>
+                </div>
+                <button type="submit" class="login-btn">Secure Login</button>
+            </form>
+        </div>
+        
+        <div class="patient-overview">
+            <div class="patient-header">
+                <h3>Patient Overview - Ash Ketchum.</h3>
+                <div class="patient-meta">
+                    <span>ID: P-2023-456</span>
+                    <span>Age: 32</span>
+                    <span>Treatment Start: Jan 2023</span>
+                </div>
+            </div>
+            
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <h4>Today's Status</h4>
+                    <div class="metric-stats">
+                        <div class="metric-item critical">
+                            <span class="metric-label">Episodes</span>
+                            <span class="metric-value">3</span>
+                            <span class="trend-indicator up">+1 from yesterday</span>
+                        </div>
+                        <div class="metric-item positive">
+                            <span class="metric-label">Reality Checks</span>
+                            <span class="metric-value">12</span>
+                            <span class="trend-indicator">On track</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-label">Medication Adherence</span>
+                            <span class="metric-value">100%</span>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="dailyChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <h4>Weekly Trends</h4>
+                    <div class="metric-stats">
+                        <div class="metric-item">
+                            <span class="metric-label">Episode Duration</span>
+                            <span class="metric-value">-15%</span>
+                            <span class="trend-indicator positive">Improving</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-label">Sleep Quality</span>
+                            <span class="metric-value">6.8/10</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-label">Social Interactions</span>
+                            <span class="metric-value">+23%</span>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="weeklyChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <h4>Treatment Progress</h4>
+                    <div class="metric-stats">
+                        <div class="metric-item">
+                            <span class="metric-label">Overall Progress</span>
+                            <span class="metric-value">67%</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 67%"></div>
+                            </div>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-label">Milestones Achieved</span>
+                            <span class="metric-value">8/10</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-label">Next Assessment</span>
+                            <span class="metric-value">3 days</span>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="progressChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <footer>
+    <p style="text-align: center;">&copy; 2025 Reality Check. All rights reserved.</p>
+  </footer>
+</body>
+</html>
